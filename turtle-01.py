@@ -12,17 +12,29 @@ def square(size):
 
 def triangle(size):
     forward(size)
-    right(120)
+    left(120)
     forward(size)
-    right(120)
+    left(120)
     forward(size)
-    right(120)
+    left(120)
 
 
-square(32)
-right(29)
-square(199)
-circle(100)
-triangle(200)
+def triforce(size):
+    triangle(size)
+    forward(size / 2)
+    left(120)
+    triangle(size / 2)
+    right(120)
+    triangle(size / 2)
+    left(120)
+    forward(size / 2)
+    right(120)
+    forward(size / 2)
+    # triangle(size / 2)
+    # triangle(size / 2)
+
+
+triforce(250)
+# triangle(250)
 
 input()
