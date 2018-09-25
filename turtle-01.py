@@ -20,21 +20,30 @@ def triangle(size):
 
 
 def triforce(size):
+    pencolor('#FF940D')
     triangle(size)
-    forward(size / 2)
+    forward(size)
+    triangle(size)
     left(120)
-    triangle(size / 2)
+    forward(size)
     right(120)
-    triangle(size / 2)
-    left(120)
-    forward(size / 2)
-    right(120)
-    forward(size / 2)
-    # triangle(size / 2)
-    # triangle(size / 2)
+    triangle(size)
 
+def spiral_pattern(repeat):
+    for i in range(repeat):
+        forward(repeat)
+        left(124)
+        
+# penup()
+# goto(-280, -280)
+# pendown()
+# triforce(600)
+# penup()
+# goto(-280, -280)
+# pendown()
+# triforce(300)
+# spiral_pattern(100)
+triforce(150)
 
-triforce(250)
-# triangle(250)
 
 input()
